@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Two Numbers</title>
+  </head>
+  <body>
+    <h2>Add Two Numbers</h2>
+    <p>Enter the first number: <input type="number" id="num1" /></p>
+    <p>Enter the second number: <input type="number" id="num2" /></p>
+    <button onclick="addNumbers()">Add</button>
+    <p>Result: <span id="result"></span></p>
+
+    <script>
+      function addNumbers() {
+        // Get values from input fields
+        const num1 = parseFloat(document.getElementById("num1").value) || 0;
+        const num2 = parseFloat(document.getElementById("num2").value) || 0;
+
+        // Calculate sum
+        const sum = num1 + num2;
+
+        // Display result
+        document.getElementById("result").textContent = sum;
+      }
+    </script>
+  </body>
+</html>
